@@ -2,18 +2,38 @@
     margin: 0;
     padding: 0;
 }
+.navbar{
+
+    position: sticky;
+    top: 0px;
+ 
+    
+}
 .logo-div{
     display: flex;
     justify-content: center;
-    background-color:aliceblue;
+    
+   /* background-color:aliceblue;
+   https://images.unsplash.com/photo-1596468138838-0f34c2d0773b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D*/
  
+}
+.bg{
+
+    height: 65vh;
+    background: rgba(0,0,0,0.7) url('../img/bg.jpg'); 
+    background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+
+
+
 }
 .web-logo{
     width: 15%;
 }
 
 .nav-list{
-    background-color: aliceblue;
+   /* background-color: aliceblue;*/
     display: flex;
     justify-content: center;
    
@@ -22,14 +42,14 @@
 .nav-list li{
     margin: 20px 20px;
     list-style-type: none;
-  font-size: 100%;
+  font-size: 140%;
     
 }
 
 .nav-list li a{
     
     text-decoration: none;
-    color: black;
+    color: white;
    
    
 }
@@ -40,6 +60,50 @@
    
    
 }
+
+.first-section{
+
+    height: 70vh;
+}
+.main-box{
+    margin: auto;
+    color: white;
+    max-width: 50%;
+    display: flex;
+    margin-top: 100px;
+ text-align: center;
+    justify-content: center;
+  
+}
+.first-half{
+    flex-direction: column;
+    justify-content: center;
+}
+.text-big{
+    cursor: pointer;
+    font-size: 80px;
+}
+.text-sm{
+    cursor: pointer;
+    margin-top: 35px;
+  
+    font-size: 25px;
+}
+
+.second-section{
+  
+    background-color: aliceblue;
+}
+.panjabi-headline{
+   font-size: 80px;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+}
+.products{
+   width: 250px;
+}
+
 @media screen and (max-width: 768px) {
     /* Your CSS rules for smaller screens */
 
@@ -49,5 +113,19 @@
       font-size: 90%;
         
     }
+    .background{
+        width: 100%;
+        background-size: cover;
+    }
+
+    .text-big{
+        font-size: 40px;
+    }
+    .text-sm{
+        margin-top: 5px;
+        font-size: 15px;
+    }
+
+
 
 }
